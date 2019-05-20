@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mission to Mars</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="jumbotron text-center">
+      <h1 class="font-weight-bold">Mission to Mars</h1>
+      <p class="m-3"><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape for Information</a></p>
+    </div>
+
+    <!-- News Items -->
+    <div class="row" id="news-items">
+      <div><h2 class="font-weight-bold">Latest Mars News</h2></div>     
+      <div class="col-md-12">
+        <h4 class="font-weight-bold heading">{{news.news_title}} </h4>
+        <h5>{{news.news_teaser}}</h5>
+      </div>
+    </div>
+
+    <!-- Featured Image -->
+    <div class="row" id="news-items">
+      <div class = "col-md-8"> 
+          <h2 class ="font-weight-bold">Featured Mars Image</h2>
+          <img src={{news.image}} alt="mars image" class="img-fluid mb-3"> 
+      </div> 
+
+        <div class="col-md-4">
+          <div class="row card border m-2">
+            <div class="card-body">
+              <p class="card-text">{{news.tweet}}</p>
+            </div>
+          </div>
+          <div class="row">
+            <h2 class ="font-weight-bold">Mars Facts</h2>
+          <table class="table">
+              <thead>
+                  <tr>
+                    <th scope="col">Fact</th>
+                    <th scope="col">Value</th>
+                  </tr>
+              </thead>
+                <tbody>
+                    <tr>
+                      <th scope="row">Equatorial Diameter</th>
+                      <td>{{news.Equatorial_Diameter}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Polar Diameter</th>
+                      <td>{{news.Polar_Diameter}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Mass</th>
+                      <td>{{news.Mass}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Moons</th>
+                      <td>{{news.Moons}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Orbit Distance</th>
+                      <td>{{news.Orbit_Distance}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Orbit Period</th>
+                      <td>{{news.Orbit_Period}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Surface Temperature</th>
+                      <td>{{news.Surface_Temperature}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">First Record</th>
+                      <td>{{news.First_Record}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Recorded By</th>
+                      <td>{{news.Recorded_By}}</td>
+                    </tr>
+                      
+                </tbody>
+          </table>
+        </div>
+        </div>
+
+
+    </div>
+      <div class="row">
+        <h2 class="font-weight-bold">Hemisphere Images</h2>
+      </div>
+        <div class="row">
+          
+            <div class="col-md-6">
+              <h5>Cerberus Hemisphere Enhanced</h5>
+              <img src={{news.Cerberus_Hemisphere_Enhanced}} alt="mars image" class="img-fluid mb-3"> 
+            </div> 
+            <div class="col-md-6">
+                <h5>Schiaparelli Hemisphere Enhanced</h5>
+                <img src={{news.Schiaparelli_Hemisphere_Enhanced}} alt="mars image" class="img-fluid mb-3"> 
+            </div>
+          
+        </div>
+        <div class="row">
+          
+            <div class="col-md-6">
+              <h5>Syrtis Major Hemisphere Enhanced</h5>
+              <img src={{news.Syrtis_Major_Hemisphere_Enhanced}} alt="mars image" class="img-fluid mb-3"> 
+            </div> 
+            <div class="col-md-6">
+              <h5>Valles Marineris Hemisphere Enhanced</h5>
+              <img src={{news.Valles_Marineris_Hemisphere_Enhanced}} alt="mars image" class="img-fluid mb-3"> 
+            </div>
+          </div>
+      
+  </div>
+  <!-- <footer class="footer fixed-bottom">
+      <div class="container">
+          <div class="row">
+              <p class="text-center">Copyright 2019 Karen Gutzman</p>
+          </div>
+      </div>
+  </footer> -->
+
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
