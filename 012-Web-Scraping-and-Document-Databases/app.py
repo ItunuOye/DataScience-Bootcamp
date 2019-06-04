@@ -23,7 +23,7 @@ def scraper():
     news = mongo.db.news
     news_data = scrape.scrape()
     news.update({}, news_data, upsert=True)
-    return redirect("/", code=302)
+    return redirect("/")
 
 
 if __name__ == "__main__":
