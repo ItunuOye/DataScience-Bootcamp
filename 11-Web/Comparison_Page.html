@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Web Visualization Dashboad</title>
+      <link rel="stylesheet" href="reset.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="style.css">
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <a class="active" href="index.html">Lattitude</a>
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                  <div class="dropdown">
+                      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plots
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="Temperature.html">Max Temperature</a>
+                            <a class="dropdown-item" href="Humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="Clouds_Visualization.html">Cloudiness</a>
+                            <a class="dropdown-item" href="Wind.html">Windspeed</a>
+                      </div>
+                    </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id="comparisonMargin" href="Comparison_Page.html">Comparison</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" id="dataMargin" href="Data.html">Data</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="comparisoncontainer">
+                <div class="container">
+                    <h1 class="headermain">Comparisons: Latitude vs. X</h1>
+                    <hr>
+                        <div class="row">
+                          <div class="col"><div class="col"><h3 class="pcompare">vs. Max Temperature</h3><a href="Temperature.html"><img class="imgcompare" src="Fig1.png" alt="Fig1"></a></div></div>
+                          <div class="col"><div class="col"><h3 class="pcompare">vs. Humidity</h3><a href= "Humidity.html"><img class="imgcompare" src="Fig2.png" alt="Fig2"></a></div></div>
+                          <div class="w-100"></div>
+                          <div class="col"><div class="col"><h3 class="pcompare">vs. Cloudiness</h3><a href="Clouds_Visualization.html"><img class="imgcompare" src="Fig3.png" alt="Fig3"></a></div></div>
+                          <div class="col"><div class="col"><h3 class="pcompare">vs. Windspeed</h3><a href="Wind.html"><img class="imgcompare" src="Fig4.png" alt="Fig4"></a></div></div>
+                        </div>
+                      </div>
+        </div>
+        <footer class="footer1">
+                Words
+                </footer>
+                <footer class="footer2">
+                (c) Copyright 2019 Data Science Bootcamp
+                </footer>
+
+
+                    
+    </body>
