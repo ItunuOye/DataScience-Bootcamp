@@ -100,7 +100,7 @@ function createMap(earthquakes) {
 }
 
   function radius(magnitude){
-    return magnitude*20000
+    return magnitude*30000
   };
   
   function color(magnitude){
