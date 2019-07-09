@@ -1,15 +1,15 @@
 
 /* remove default margin and padding from body */
 body {
-  padding: 4;
-  margin: 4;
+  padding: 2;
+  margin: 2;
 }
 
 /* set map, body, and html to 100% of the screen size */
 #map,
 body,
 html {
-  height: 90%;
+  height: 100%;
 }
 
 /* #map {
